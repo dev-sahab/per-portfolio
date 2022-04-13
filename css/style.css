@@ -407,6 +407,10 @@ section{
 {
     padding: 0.5rem;
 }
+.input-wrap input {
+	max-width: 100%;
+	width: 100%;
+}
 .contact .input-wrap-2 input{
     margin-bottom: 1.5rem;
 }
@@ -426,6 +430,9 @@ section{
 .contact .input-wrap-2 textarea:focus {
     border: 1px solid var(--primary);
 }
+
+
+/* Footer Section */
 footer{
     background: var(--dark);
     padding: 5rem 0;
