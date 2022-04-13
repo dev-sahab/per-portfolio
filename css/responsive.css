@@ -53,18 +53,26 @@
     section{
         padding: 4rem 0;
     }
+    header{
+        background-image: url(../assets/img/man.png);
+        background-position-x: 100%;
+        background-position-y: 6rem;
+        background-size: 260px;
+        background-repeat: no-repeat;
+        clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 63% 94%, 0px 100%);
+    }
     .hero {
         flex-direction: column;
         /* position: relative; */
     }
     header {
-        clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 63% 94%, 0px 100%);
+        
     }
     .hero::after{
         content: '';
         width: 100%;
         height: 100%;
-        background: linear-gradient(180deg , rgba(0,0,0,0), rgba(0,0,0,0.9));;
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));;
         position: absolute;
         z-index: 1;
         top: 130;
@@ -78,12 +86,14 @@
     }
     .hero .left{
         margin-top: -5rem;
-        margin-right: -9rem;
+        /* margin-right: -9rem; */
         padding-bottom: 6rem;
         z-index: 0;
+        /* visibility: hidden; */
     }
     .hero .left img {
         margin-bottom: 0;
+        visibility: hidden;
     }
 
     .about .container{
