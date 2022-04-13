@@ -1,0 +1,160 @@
+@media all and (max-width: 1024px){
+    header {
+        clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 27% 89%, 0px 100%);
+    }
+    #main-nav{
+        display: none;
+    }
+    .mobile-header{
+        display: flex;
+    }
+    .hero {
+        padding-top: 12rem;
+        padding-bottom: 6rem;
+    }
+    .hero .left img{
+        width: 260px;
+        margin-bottom: -4.5rem;
+    }
+    .hero .right h1{
+        font-size: 3rem;
+    }
+    .about .left img {
+        height: 360px;
+    }
+
+    .service .card-wrapper {
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+    .cta {
+        clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 64% 76%, 0px 100%);
+        padding-bottom: 11rem;
+    }
+
+    .work .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog {
+        clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 65% 95%, 0px 100%);
+    }
+    .blog .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog .card-wrapper .card {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Screen Size:  min-width 576px*/
+@media (max-width: 576px) {
+    section{
+        padding: 4rem 0;
+    }
+    .hero {
+        flex-direction: column;
+        /* position: relative; */
+    }
+    header {
+        clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 63% 94%, 0px 100%);
+    }
+    .hero::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg , rgba(0,0,0,0), rgba(0,0,0,0.9));;
+        position: absolute;
+        z-index: 1;
+        top: 130;
+    }
+    .hero .right {
+        position: absolute;
+        padding: 0 1rem;
+        top: 260px;
+        z-index: 999;
+        /* background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)); */
+    }
+    .hero .left{
+        margin-top: -5rem;
+        margin-right: -9rem;
+        padding-bottom: 6rem;
+        z-index: 0;
+    }
+    .hero .left img {
+        margin-bottom: 0;
+    }
+
+    .about .container{
+        flex-direction: column;
+    }
+    .about .right{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .about .right .social ul{
+        justify-content: center;
+    }
+
+    .service .card-wrapper {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .cta {
+        clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 68% 87%, 0px 100%);
+        padding-bottom: 7rem;
+    }
+
+    .testimonial .slider .slide {
+        padding: 0 1rem;
+    }
+    .section-heading h1 + p {
+        margin-bottom: 3rem;
+    }
+
+    .work .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog {
+        clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 65% 96%, 0px 100%);
+        padding-bottom: 7rem;
+    }
+
+    .contact .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact .input-wrap {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media (min-width: 576px) {
+    .container{
+        max-width: 540px;
+    }
+}
+/* Screen Size:  min-width 768px*/
+
+@media (min-width: 768px) {
+    .container{
+        max-width: 720px;
+    }
+}
+/* Screen Size:  min-width 992px*/
+
+@media (min-width: 992px) {
+    .container{
+        max-width: 960px;
+    }
+}
+/* Screen Size:  min-width 1200px*/
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1152px;
+    }
+}
